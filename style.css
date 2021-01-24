@@ -1,0 +1,109 @@
+@font-face{
+  font-family: "sf-bold";
+  src: url(./fonts/SF-Pro-Display-Bold.otf);
+}
+
+@font-face{
+  font-family: "sf-medium";
+  src: url(./fonts/SF-Pro-Display-Medium.otf);
+}
+
+@font-face{
+  font-family: "sf-regular";
+  src: url(./fonts/SF-Pro-Display-Regular.otf);
+}
+@font-face{
+  font-family: "sf-thin";
+  src: url(./fonts/SF-Pro-Display-Thin.otf);
+}
+body {
+  background: linear-gradient(0deg, rgba(243,250,245,1) 0%, rgb(108, 165, 152) 100%);
+  /* height: 100vh; */
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 5em);
+  
+}
+.search-input {
+  font-family: "sf-regular";
+  color: #335f79;
+  justify-self: center;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 2em;
+  text-align: center;
+  transition: border 0.3s ease;
+}
+.search-input:focus{
+  border-bottom: 2px solid #335f79;
+}
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+
+}
+.search-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  outline: 0;
+  height: 40px;
+  width: 40px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.search-btn:hover{
+  border: 2px solid #335f79;
+  color: #335f79;
+  transition: 0.3s ease;
+}
+.search-container {
+  margin: 12px;
+}
+.weather-container {
+  width: 600px;
+  background: linear-gradient(180deg, rgba(1,56,88,1) 0%, rgba(31,112,87,1) 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "sf-thin";
+  font-size: 36px;
+}
+.left-container {
+  padding: 20px;
+}
+.left-city-country {
+  font-family: "sf-regular";
+  color: rgba(255, 255, 255, 0.7);
+}
+.left-time {
+  font-family: "sf-medium";
+  font-family: "sf-thin";
+  font-size: 30px;
+}
+.left-temp {
+  font-family: "sf-regular";
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 150px;
+}
+.left-main {
+  font-family: "sf-regular";
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 42px;
+}
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
