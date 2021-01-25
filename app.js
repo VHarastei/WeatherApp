@@ -1,6 +1,6 @@
 async function locationResponse(location) {
   try {
-  let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=e42478b31305f050479347374ff01402`, {mode: 'cors'});
+  let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=e42478b31305f050479347374ff01402`, {mode: 'cors'});
   let responseObj = await response.json();
   let weatherObj = processData(responseObj);
   renderData(weatherObj);
